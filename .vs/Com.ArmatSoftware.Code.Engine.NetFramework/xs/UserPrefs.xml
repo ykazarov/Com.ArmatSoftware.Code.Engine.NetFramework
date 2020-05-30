@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Com.ArmatSoftware.Code.Engine.NetFramework" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>../Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler.csproj</String>
+    <String>Com.ArmatSoftware.Code.Engine.NetFramework.Core/Com.ArmatSoftware.Code.Engine.NetFramework.Core.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MultiItemStartupConfigurations />
+</Properties>

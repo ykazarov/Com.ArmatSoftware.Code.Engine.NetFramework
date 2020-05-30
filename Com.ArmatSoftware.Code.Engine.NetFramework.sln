@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.ArmatSoftware.Code.Engine.NetFramework.Core", "Com.ArmatSoftware.Code.Engine.NetFramework.Core\Com.ArmatSoftware.Code.Engine.NetFramework.Core.csproj", "{9762E280-7DE2-426E-BB0B-A4F2DE3CEBEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.ArmatSoftware.Code.Engine.NetFramework.Compiler", "Com.ArmatSoftware.Code.Engine.NetFramework.Compiler\Com.ArmatSoftware.Code.Engine.NetFramework.Compiler.csproj", "{FE2DB3E2-39A1-4AFB-942B-BD3D295AFE13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9762E280-7DE2-426E-BB0B-A4F2DE3CEBEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9762E280-7DE2-426E-BB0B-A4F2DE3CEBEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9762E280-7DE2-426E-BB0B-A4F2DE3CEBEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9762E280-7DE2-426E-BB0B-A4F2DE3CEBEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE2DB3E2-39A1-4AFB-942B-BD3D295AFE13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE2DB3E2-39A1-4AFB-942B-BD3D295AFE13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE2DB3E2-39A1-4AFB-942B-BD3D295AFE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE2DB3E2-39A1-4AFB-942B-BD3D295AFE13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

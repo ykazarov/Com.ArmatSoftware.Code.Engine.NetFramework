@@ -1,0 +1,6 @@
+/Users/yurikazarov/Git/Com.ArmatSoftware.Code.Engine.NetFramework/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/bin/Debug/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler.dll
+/Users/yurikazarov/Git/Com.ArmatSoftware.Code.Engine.NetFramework/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/bin/Debug/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler.pdb
+/Users/yurikazarov/Git/Com.ArmatSoftware.Code.Engine.NetFramework/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/obj/Debug/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler.csprojAssemblyReference.cache
+/Users/yurikazarov/Git/Com.ArmatSoftware.Code.Engine.NetFramework/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/obj/Debug/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler.csproj.CoreCompileInputs.cache
+/Users/yurikazarov/Git/Com.ArmatSoftware.Code.Engine.NetFramework/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/obj/Debug/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler.dll
+/Users/yurikazarov/Git/Com.ArmatSoftware.Code.Engine.NetFramework/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/obj/Debug/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler.pdb
