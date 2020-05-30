@@ -3,7 +3,20 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Com.ArmatSoftware.Code.Engine.NetFramework" expanded="True" selected="True" />
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="Com.ArmatSoftware.Code.Engine.NetFramework" expanded="True">
+            <Node name="Com.ArmatSoftware.Code.Engine.NetFramework.Compiler" expanded="True">
+              <Node name="CSharp" expanded="True" selected="True">
+                <Node name="CSharpExecutorTemplate.tt" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+          <Node />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="com.armatsolutions.code.engine" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
@@ -14,6 +27,8 @@
     <String>Com.ArmatSoftware.Code.Engine.NetFramework.Core/Com.ArmatSoftware.Code.Engine.NetFramework.Core.csproj</String>
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
