@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using ArmatSolutions.Code.Engine.Core;
+using Com.ArmatSoftware.Code.Engine.NetFramework.Core;
 
-namespace ArmatSolutions.Code.Engine.Compiler
+namespace Com.ArmatSoftware.Code.Engine.NetFramework.Compiler
 {
 	/// <summary>
 	/// Compiler configuration

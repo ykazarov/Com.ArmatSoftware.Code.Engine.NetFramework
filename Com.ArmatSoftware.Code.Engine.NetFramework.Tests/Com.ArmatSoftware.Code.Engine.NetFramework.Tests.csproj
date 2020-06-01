@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit.3.12.0\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.12.0\build\NUnit.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A8BF3045-2EEB-45A6-83F1-60E596997E73}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Com.ArmatSoftware.Code.Engine.NetFramework.Tests</RootNamespace>
+    <AssemblyName>Com.ArmatSoftware.Code.Engine.NetFramework.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.12.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompilerTests.cs" />
+    <Compile Include="TestAction.cs" />
+    <Compile Include="TestSubject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Com.ArmatSoftware.Code.Engine.NetFramework.Core\Com.ArmatSoftware.Code.Engine.NetFramework.Core.csproj">
+      <Project>{ED59E31A-E057-4C76-BE33-094F2396645E}</Project>
+      <Name>Com.ArmatSoftware.Code.Engine.NetFramework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Com.ArmatSoftware.Code.Engine.NetFramework.Compiler\Com.ArmatSoftware.Code.Engine.NetFramework.Compiler.csproj">
+      <Project>{55D08421-9AB4-4E4B-AE0B-F9B44C786E53}</Project>
+      <Name>Com.ArmatSoftware.Code.Engine.NetFramework.Compiler</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FE2DB3E2-39A1-4AFB-942B-BD3D295AFE13}</ProjectGuid>
+    <ProjectGuid>{55D08421-9AB4-4E4B-AE0B-F9B44C786E53}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Com.ArmatSoftware.Code.Engine.NetFramework.Compiler</RootNamespace>
     <AssemblyName>Com.ArmatSoftware.Code.Engine.NetFramework.Compiler</AssemblyName>
@@ -28,29 +28,37 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="Microsoft.VisualStudio.TextTemplating.Interfaces.10.0">
+      <HintPath>..\packages\Microsoft.VisualStudio.TextTemplating.Interfaces.10.0.10.0.30320\lib\net40\Microsoft.VisualStudio.TextTemplating.Interfaces.10.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextTemplating.Interfaces.11.0">
+      <HintPath>..\packages\Microsoft.VisualStudio.TextTemplating.Interfaces.11.0.11.0.50728\lib\net45\Microsoft.VisualStudio.TextTemplating.Interfaces.11.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextTemplating.15.0">
+      <HintPath>..\packages\Microsoft.VisualStudio.TextTemplating.15.0.16.6.30107.105\lib\net45\Microsoft.VisualStudio.TextTemplating.15.0.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ICompiler.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
-    <Compile Include="ICompilerConfiguration.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
-    <Compile Include="ITemplateConfiguration.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
-    <Compile Include="ITemplateGenerator.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
-    <Compile Include="Base\CompilerConfiguration.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
-    <Compile Include="CSharp\CSharpCompiler.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
-    <Compile Include="CSharp\CSharpExecutorTemplate.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' ">
-      <DependentUpon>CSharpExecutorTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CSharp\CSharpExecutorTemplate.Constructor.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="ICompiler.cs" />
+    <Compile Include="ICompilerConfiguration.cs" />
+    <Compile Include="ITemplateConfiguration.cs" />
+    <Compile Include="Base\CompilerConfiguration.cs" />
+    <Compile Include="CSharp\CSharpCompiler.cs" />
+    <Compile Include="CSharp\CSharpExecutorTemplate.Constructor.cs" />
+    <Compile Include="CSharp\CSharpExecutorTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Base\" />
-    <Folder Include="CSharp\" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="CSharp\CSharpExecutorTemplate.tt">
-      <Generator>TextTemplatingFilePreprocessor</Generator>
-      <LastGenOutput>CSharpExecutorTemplate.cs</LastGenOutput>
-    </None>
+    <ProjectReference Include="..\Com.ArmatSoftware.Code.Engine.NetFramework.Core\Com.ArmatSoftware.Code.Engine.NetFramework.Core.csproj">
+      <Project>{ED59E31A-E057-4C76-BE33-094F2396645E}</Project>
+      <Name>Com.ArmatSoftware.Code.Engine.NetFramework.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CSharp\CSharpExecutorTemplate.tt" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

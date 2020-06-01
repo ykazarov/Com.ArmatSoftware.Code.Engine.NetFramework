@@ -1,22 +1,20 @@
-﻿<Properties>
+﻿<Properties StartupConfiguration="{A8BF3045-2EEB-45A6-83F1-60E596997E73}|Unit Tests">
+  <MonoDevelop.Ide.ItemProperties.Com.ArmatSoftware.Code.Engine.NetFramework.Tests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Option id="ShowAllFiles" value="True" />
-          <Node name="Com.ArmatSoftware.Code.Engine.NetFramework" expanded="True">
+          <Node name="Com.ArmatSoftware.Code.Engine.NetFramework" expanded="True" selected="True">
             <Node name="Com.ArmatSoftware.Code.Engine.NetFramework.Compiler" expanded="True">
-              <Node name="CSharp" expanded="True" selected="True">
-                <Node name="CSharpExecutorTemplate.tt" expanded="True" />
-              </Node>
+              <Node name="CSharp" expanded="True" />
             </Node>
+            <Node name="Com.ArmatSoftware.Code.Engine.NetFramework.Tests" expanded="True" />
           </Node>
-          <Node />
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="com.armatsolutions.code.engine" expanded="True" selected="True" />
+          <Node name="Com.ArmatSoftware.Code.Engine.NetFramework" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
@@ -24,11 +22,12 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>
     <String>../Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler.csproj</String>
-    <String>Com.ArmatSoftware.Code.Engine.NetFramework.Core/Com.ArmatSoftware.Code.Engine.NetFramework.Core.csproj</String>
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/yurikazarov/Git/Com.ArmatSoftware.Code.Engine.NetFramework/Com.ArmatSoftware.Code.Engine.NetFramework.Tests/CompilerTests.cs" relfile="Com.ArmatSoftware.Code.Engine.NetFramework.Tests/CompilerTests.cs" line="23" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
