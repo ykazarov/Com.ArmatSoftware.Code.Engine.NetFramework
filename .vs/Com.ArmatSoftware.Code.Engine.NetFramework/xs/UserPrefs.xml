@@ -1,20 +1,36 @@
 ﻿<Properties StartupConfiguration="{A8BF3045-2EEB-45A6-83F1-60E596997E73}|Unit Tests">
   <MonoDevelop.Ide.ItemProperties.Com.ArmatSoftware.Code.Engine.NetFramework.Tests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/CSharp/CSharpCompiler.cs">
+    <Files>
+      <File FileName="Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/CSharp/CSharpCompiler.cs" Line="51" Column="6" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Com.ArmatSoftware.Code.Engine.NetFramework" expanded="True" selected="True">
+          <Node name="Com.ArmatSoftware.Code.Engine.NetFramework" expanded="True">
             <Node name="Com.ArmatSoftware.Code.Engine.NetFramework.Compiler" expanded="True">
-              <Node name="CSharp" expanded="True" />
+              <Node name="CSharp" expanded="True">
+                <Node name="CSharpCompiler.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="Com.ArmatSoftware.Code.Engine.NetFramework.Tests" expanded="True" />
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="Com.ArmatSoftware.Code.Engine.NetFramework" expanded="True" selected="True" />
+          <Node name="Com.ArmatSoftware.Code.Engine.NetFramework" expanded="True">
+            <Node name="Com.ArmatSoftware.Code.Engine.NetFramework.Tests" expanded="True">
+              <Node name="Com.ArmatSoftware.Code.Engine.NetFramework.Tests" expanded="True">
+                <Node name="CompilerTests" expanded="True">
+                  <Node name="Should_Execute_Simple_Operation" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
@@ -26,7 +42,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/yurikazarov/Git/Com.ArmatSoftware.Code.Engine.NetFramework/Com.ArmatSoftware.Code.Engine.NetFramework.Tests/CompilerTests.cs" relfile="Com.ArmatSoftware.Code.Engine.NetFramework.Tests/CompilerTests.cs" line="23" column="1" />
+      <Breakpoint file="/Users/yurikazarov/Git/Com.ArmatSoftware.Code.Engine.NetFramework/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/CSharp/CSharpCompiler.cs" relfile="Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/CSharp/CSharpCompiler.cs" line="74" column="1" />
+      <Breakpoint file="/Users/yurikazarov/Git/Com.ArmatSoftware.Code.Engine.NetFramework/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/CSharp/CSharpCompiler.cs" relfile="Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/CSharp/CSharpCompiler.cs" line="72" column="1" />
+      <Breakpoint file="/Users/yurikazarov/Git/Com.ArmatSoftware.Code.Engine.NetFramework/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/CSharp/CSharpCompiler.cs" relfile="Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/CSharp/CSharpCompiler.cs" line="63" column="1" />
+      <Breakpoint file="/Users/yurikazarov/Git/Com.ArmatSoftware.Code.Engine.NetFramework/Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/CSharp/CSharpCompiler.cs" relfile="Com.ArmatSoftware.Code.Engine.NetFramework.Compiler/CSharp/CSharpCompiler.cs" line="55" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

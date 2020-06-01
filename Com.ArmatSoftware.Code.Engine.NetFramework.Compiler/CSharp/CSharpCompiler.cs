@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using Com.ArmatSoftware.Code.Engine.NetFramework.Core;
+using Microsoft.CSharp.RuntimeBinder;
 using Microsoft.VisualStudio.TextTemplating;
 
 namespace Com.ArmatSoftware.Code.Engine.NetFramework.Compiler.CSharp
@@ -49,6 +50,15 @@ namespace Com.ArmatSoftware.Code.Engine.NetFramework.Compiler.CSharp
 				CompilerOptions = "/t:library"
 			};
 
+			foreach(var reference in configuration.References)
+			{
+				var referenceAssembly = reference.Assembly.GetName().Name;
+				if(!parameters.ReferencedAssemblies.Contains(referenceAssembly))
+				{
+					parameters.ReferencedAssemblies.Add(referenceAssembly);
+				}
+			}
+
 			var results = codeProvider.CompileAssemblyFromSource(parameters, code);
 			ValidateCompilationResults(results);
 
@@ -78,6 +88,8 @@ namespace Com.ArmatSoftware.Code.Engine.NetFramework.Compiler.CSharp
 			configuration.References.Add(typeof(S));
 			configuration.References.Add(typeof(IExecutor<>));
 			configuration.References.Add(typeof(DynamicAttribute));
+			configuration.References.Add(typeof(RuntimeBinderException));
+
 		}
 
 		private static void ValidateConfiguration(ICompilerConfiguration<S> configuration)

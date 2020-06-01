@@ -37,6 +37,7 @@
     <Reference Include="Microsoft.VisualStudio.TextTemplating.15.0">
       <HintPath>..\packages\Microsoft.VisualStudio.TextTemplating.15.0.16.6.30107.105\lib\net45\Microsoft.VisualStudio.TextTemplating.15.0.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
