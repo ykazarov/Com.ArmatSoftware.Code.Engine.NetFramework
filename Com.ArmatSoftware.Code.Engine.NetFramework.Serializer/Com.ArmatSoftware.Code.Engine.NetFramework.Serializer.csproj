@@ -3,12 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ED59E31A-E057-4C76-BE33-094F2396645E}</ProjectGuid>
+    <ProjectGuid>{E36ACDC7-229B-4DED-B0A9-C4C9AE2FE0CB}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Com.ArmatSoftware.Code.Engine.NetFramework.Core</RootNamespace>
-    <AssemblyName>Com.ArmatSoftware.Code.Engine.NetFramework.Core</AssemblyName>
+    <RootNamespace>Com.ArmatSoftware.Code.Engine.NetFramework.Serializer</RootNamespace>
+    <AssemblyName>Com.ArmatSoftware.Code.Engine.NetFramework.Serializer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <PackOnBuild>true</PackOnBuild>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,12 +28,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JsonSerializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="IAction.cs" />
-    <Compile Include="IExecutionContext.cs" />
-    <Compile Include="IExecutor.cs" />
+    <Compile Include="XmlSerializer.cs" />
+    <Compile Include="ISerializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Com.ArmatSoftware.Code.Engine.NetFramework.Core\Com.ArmatSoftware.Code.Engine.NetFramework.Core.csproj">
+      <Project>{ED59E31A-E057-4C76-BE33-094F2396645E}</Project>
+      <Name>Com.ArmatSoftware.Code.Engine.NetFramework.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
