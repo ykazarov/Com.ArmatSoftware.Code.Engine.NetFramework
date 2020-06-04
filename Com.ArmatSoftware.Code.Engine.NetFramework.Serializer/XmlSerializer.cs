@@ -14,7 +14,7 @@ namespace Com.ArmatSoftware.Code.Engine.NetFramework.Serializer
 
 		public string Serialize<S>(IEnumerable<IAction<S>> actions) where S : class
 		{
-			return serializer.Serialize<S>(actions);
+			return serializer.Serialize(actions);
 		}
 	}
 }

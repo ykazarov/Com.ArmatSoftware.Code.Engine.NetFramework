@@ -35,6 +35,7 @@
     <Compile Include="CompilerTests.cs" />
     <Compile Include="TestAction.cs" />
     <Compile Include="TestSubject.cs" />
+    <Compile Include="SerializerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -47,6 +48,10 @@
     <ProjectReference Include="..\Com.ArmatSoftware.Code.Engine.NetFramework.Compiler\Com.ArmatSoftware.Code.Engine.NetFramework.Compiler.csproj">
       <Project>{55D08421-9AB4-4E4B-AE0B-F9B44C786E53}</Project>
       <Name>Com.ArmatSoftware.Code.Engine.NetFramework.Compiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Com.ArmatSoftware.Code.Engine.NetFramework.Serializer\Com.ArmatSoftware.Code.Engine.NetFramework.Serializer.csproj">
+      <Project>{E36ACDC7-229B-4DED-B0A9-C4C9AE2FE0CB}</Project>
+      <Name>Com.ArmatSoftware.Code.Engine.NetFramework.Serializer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

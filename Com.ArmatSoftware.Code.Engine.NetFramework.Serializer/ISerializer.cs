@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using Com.ArmatSoftware.Code.Engine.NetFramework.Core;
-using Newtonsoft.Json.Linq;
 
 namespace Com.ArmatSoftware.Code.Engine.NetFramework.Serializer
 {
