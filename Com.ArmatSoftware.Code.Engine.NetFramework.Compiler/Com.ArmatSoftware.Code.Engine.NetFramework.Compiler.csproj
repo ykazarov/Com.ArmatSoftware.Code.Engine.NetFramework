@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\NuGet.Build.Packaging.0.2.5-dev.8\build\NuGet.Build.Packaging.props" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.5-dev.8\build\NuGet.Build.Packaging.props')" />
+  <Import Project="..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.props" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -14,6 +14,12 @@
     <PackageVersion>1.0.0</PackageVersion>
     <Authors>Yuri Kazarov</Authors>
     <Description>Essential components for compilation and execution of custom code at run time</Description>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/ykazarov/Com.ArmatSoftware.Code.Engine.NetFramework/master/LICENSE.md</PackageLicenseUrl>
+    <Owners>Armat Software LLC</Owners>
+    <Summary>Essential components for run-time code compilation and execution in a developer-friendly manner</Summary>
+    <Title>Code Engine</Title>
+    <PackageProjectUrl>https://github.com/ykazarov/Com.ArmatSoftware.Code.Engine.NetFramework</PackageProjectUrl>
+    <PackageIconUrl>http://global.armatlab.com/assets/logos/armatsoftware.jpg</PackageIconUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -68,5 +74,5 @@
     <EmbeddedResource Include="CSharp\CSharpExecutorTemplate.tt" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\NuGet.Build.Packaging.0.2.5-dev.8\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.5-dev.8\build\NuGet.Build.Packaging.targets')" />
+  <Import Project="..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets')" />
 </Project>
