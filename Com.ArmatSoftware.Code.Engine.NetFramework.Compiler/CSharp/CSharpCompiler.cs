@@ -40,7 +40,7 @@ namespace Com.ArmatSoftware.Code.Engine.NetFramework.Compiler.CSharp
 
 			var code = codeGenerator.TransformText();
 
-			var fullClassName = $"{configuration.GetNamespace()}.{configuration.GetClassName()}";
+			var executorTypeName = $"{configuration.GetNamespace()}.{configuration.GetClassName()}";
 
 			CodeDomProvider codeProvider = CodeDomProvider.CreateProvider("CSharp");
 
@@ -62,9 +62,11 @@ namespace Com.ArmatSoftware.Code.Engine.NetFramework.Compiler.CSharp
 			var results = codeProvider.CompileAssemblyFromSource(parameters, code);
 			ValidateCompilationResults(results);
 
-			var executorInstanceHandle = Activator.CreateInstance(results.CompiledAssembly.FullName, fullClassName);
+			var executorType = results.CompiledAssembly.GetType(executorTypeName);
 
-			return (IExecutor<S>)executorInstanceHandle.Unwrap();
+			var executorInstanceHandle = Activator.CreateInstance(executorType);
+
+			return (IExecutor<S>)executorInstanceHandle;
 		}
 
 		private static void ValidateCompilationResults(CompilerResults results)

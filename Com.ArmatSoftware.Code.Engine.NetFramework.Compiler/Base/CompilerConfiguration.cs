@@ -68,7 +68,16 @@ namespace Com.ArmatSoftware.Code.Engine.NetFramework.Compiler.Base
 
 		public string GetSubjectType()
 		{
-			return typeof(S).Name;
+			var subjectType = typeof(S);
+
+			if (subjectType.IsGenericType && subjectType.GenericTypeArguments.Any())
+			{
+				var genericType = subjectType.GenericTypeArguments[0];
+
+				return subjectType.Name.Replace("`1", genericType.Name);
+			}
+
+			return subjectType.Name;
 		}
 	}
 }
